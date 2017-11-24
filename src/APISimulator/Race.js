@@ -4,7 +4,7 @@ import Competitor from './Competitor'
 
 const chance = new Chance();
 /* a Race object.
-* */
+ * */
 export default class Race {
   constructor() {
     this.closeTime = this.getRandomDuration();
@@ -12,7 +12,7 @@ export default class Race {
   }
 
   /*generate a random number indicates the seconds a race will hold from current time
-  * output value is ranged between 60 to 300*/
+   * output value is ranged between 60 to 300*/
   getRandomDuration() {
     const minutes = chance.minute();
     const seconds = chance.second();
@@ -20,10 +20,10 @@ export default class Race {
   }
 
   /* generate a list of minimum 4 and maximum 12 random competitors*/
-  getRandomCompetitors(){
+  getRandomCompetitors() {
     const competitors = [];
-    const competitorsNum =  chance.integer({min:4, max:12});
-    for (let i = 1; i<= competitorsNum; i++){
+    const competitorsNum = chance.integer({min: 4, max: 12});
+    for (let i = 1; i <= competitorsNum; i++) {
       const newCompetitor = new Competitor();
       competitors.push(newCompetitor);
     }

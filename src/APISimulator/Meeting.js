@@ -19,7 +19,7 @@ export default class Meeting {
 
   /* randomly generate a street as the location of the meeting*/
   getRandomLocation() {
-    return;
+    return chance.street();
   }
 
   /* randomly generate a collection of races.
@@ -28,7 +28,7 @@ export default class Meeting {
     const races = [];
     const numOfRaces = chance.integer({min: 1, max: 12});
     for (let i = 1; i <= numOfRaces; i++) {
-      races.push(new Race());
+      races.push(new Race(this.type));
     }
     return races;
   }
