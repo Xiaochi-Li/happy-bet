@@ -1,29 +1,56 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import {Card,  CardText, CardBody,
+    CardTitle, CardSubtitle, Button, Table } from 'reactstrap';
 
 
-export default class RaceDetailedView extends Component{
+export default class RaceDetailedView extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-        }
+        this.state = {}
     }
 
     render() {
-        const {id} = this.props.match.params;
-        console.log(id);
-        return(
-            <div className="detailContainer">
-                <h1>Race Detail</h1>
-                <div className="jumbotron">
-                    <h1 className="display-3">Race</h1>
-                    <p className="lead">Some information</p>
-                    <hr className="my-4"></hr>
-                    <p>It uses utility classetypography and spacing to space content out within the larger container.</p>
-                    <p className="lead">
-                        <button className="btn btn-primary btn-lg">Make a bet</button>
-                    </p>
-                </div>
-            </div>
+        return (
+            <Card>
+                <CardBody>
+                    <CardTitle>Card title</CardTitle>
+                    <CardSubtitle>Card subtitle</CardSubtitle>
+                    <CardText>Some quick example text to build on the card title and make up the bulk of the card's
+                        content.</CardText>
+                    <Table>
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Username</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>@fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Larry</td>
+                            <td>the Bird</td>
+                            <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                    </Table>
+                    <Button>Make a Bet</Button>
+                </CardBody>
+            </Card>
+
         )
     }
 }

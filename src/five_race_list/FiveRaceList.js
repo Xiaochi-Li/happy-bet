@@ -1,6 +1,6 @@
 import React from 'react';
 import {ListGroup} from 'reactstrap';
-import RaceItem from './RaceItem.js'
+import RaceItem from './RaceItem.js';
 
 
 export default class FiveRaceList extends React.Component {
@@ -27,7 +27,7 @@ export default class FiveRaceList extends React.Component {
     render() {
         const {races} = this.state;
         return (
-            <ListGroup>
+            <ListGroup className={'container'}>
                 {races.map((race, index) => (<RaceItem key={index} race={race}/>))}
             </ListGroup>
         );
