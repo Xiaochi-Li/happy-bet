@@ -1,5 +1,6 @@
 import React from 'react';
 import {ListGroup} from 'reactstrap';
+import Moment from 'moment';
 import RaceItem from './RaceItem.js';
 import RaceAPISimulator from '../APISimulator/RaceAPISimulator'
 
@@ -13,9 +14,13 @@ export default class FiveRaceList extends React.Component {
   }
 
   componentWillMount(){
-    const races = new RaceAPISimulator().getNearRaces();
-    this.setState({races: JSON.parse(races)});
-    console.log(JSON.parse(races));
+    let races = new RaceAPISimulator().getNearRaces();
+    races = JSON.parse(races);
+    races.map((race) => {
+      const closeTime = new Moment(race.closeTime);
+      race.closeTime = closeTime;
+   });
+    this.setState({races: races});
   }
 
   render() {
@@ -24,7 +29,7 @@ export default class FiveRaceList extends React.Component {
       <ListGroup className={'container'}>
         {
           races.map((race, index) => (
-            <RaceItem key={index} race={race.race.closeTime}/>))
+            <RaceItem key={index} race={race}/>))
           }
       </ListGroup>
     );
