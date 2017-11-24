@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import FiveRaceList from './components/five_race_list/FiveRaceList'
-import './App.css';
+import FiveRaceList from '../five_race_list/FiveRaceList'
+
 
 class App extends Component {
     render() {
