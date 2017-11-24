@@ -28,7 +28,7 @@ export default class FiveRaceList extends React.Component {
     return (
       <ListGroup className={'container'}>
         {
-          races.map((race, index) => (
+          races.slice(0,5).map((race, index) => (
             <RaceItem key={index} race={race}/>))
           }
       </ListGroup>
