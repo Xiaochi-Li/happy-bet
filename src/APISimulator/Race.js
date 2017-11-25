@@ -1,4 +1,5 @@
 import Moment from 'moment';
+import tz from 'moment-timezone';
 import Chance from 'chance';
 import Competitor from './Competitor'
 
@@ -16,7 +17,8 @@ export default class Race {
   getRandomDuration() {
     const minutes = chance.minute();
     const seconds = chance.second();
-    return new Moment().add(minutes, 'm').add(seconds, 's');
+    const moment = new Moment();
+    return moment.tz('Australia/Brisbane').add(minutes, 'm').add(seconds, 's')
   }
 
   /* generate a list of minimum 4 and maximum 12 random competitors*/
