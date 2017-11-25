@@ -21,6 +21,10 @@ export default class FiveRaceList extends React.Component {
       race.closeTime = closeTime;
    });
     this.setState({races: races});
+    setInterval(()=> {
+      let actions = calculate_pending_actions(store.getState());
+      actions.forEach(dispatch);
+    }, 50);
   }
 
   render() {
