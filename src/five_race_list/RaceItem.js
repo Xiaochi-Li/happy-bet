@@ -18,10 +18,10 @@ export default class RaceItem extends React.Component {
 
   render() {
     const {race} = this.props;
-    console.log(race);
     return (
       <ListGroupItem className={'row'}>
         <Countdown endDate= {race.closeTime} />
+        {race.location}
        <Button color="primary" onClick={this.toggle} style={{marginBottom:'1rem'}}>Detail</Button>
         <Collapse isOpen={this.state.collapse}>
           <RaceDetailedView/>
