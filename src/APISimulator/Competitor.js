@@ -3,10 +3,11 @@ import Chance from 'chance';
 const chance = new Chance();
 /*a Competitor object*/
 export default class Competitor {
-  constructor() {
+  constructor(ID) {
     this.name = this.getRandomName();
     this.weight = this.getRandomWeight();
     this.win = this.getRandomWin();
+    this.ID = ID;
   }
   /* Generate a random name for competitor.
   * */

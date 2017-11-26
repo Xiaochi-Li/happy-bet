@@ -3,13 +3,15 @@ import tz from 'moment-timezone';
 import Chance from 'chance';
 import Competitor from './Competitor'
 
-const chance = new Chance();
+
 /* a Race object.
  * */
+const chance = new Chance();
 export default class Race {
-  constructor() {
+  constructor( ID) {
     this.closeTime = this.getRandomDuration();
     this.competitors = this.getRandomCompetitors();
+    this.ID = ID;
   }
 
   /*generate a random number indicates the seconds a race will hold from current time
@@ -26,7 +28,7 @@ export default class Race {
     const competitors = [];
     const competitorsNum = chance.integer({min: 4, max: 12});
     for (let i = 1; i <= competitorsNum; i++) {
-      const newCompetitor = new Competitor();
+      const newCompetitor = new Competitor(i);
       competitors.push(newCompetitor);
     }
     return competitors;
