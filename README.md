@@ -32,6 +32,6 @@ a collapsing card unfolds to show the detail.
  #### New Features
  * A filter allows users to choose which type or types of the race they want to see.
  #### Existing Features
- * Add colour change and animation on the countdown the clock when it's under 30 seconds. This will make users more alert to expiring races.
+ * Add colour change and animation on the countdown clock when it's under 30 seconds. This will make users more alert to expiring races.
  * Add animation when removing race feature so users are more visually aware of it.
  * Could use icons or logos to replace textual content such as the type of races.
