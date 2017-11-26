@@ -1,21 +1,15 @@
 import React, {Component} from 'react';
-import {
-  Card, CardBody,
-  CardTitle, Button, Table
-} from 'reactstrap';
+import {Card, CardBody, CardTitle, Button, Table} from 'reactstrap';
 import CompetitorItem from './CompetitorItem'
-
 
 export default class RaceDetailedView extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-    }
+    this.state = {}
   }
 
   render() {
     const {location, ID, competitors} = this.props.race;
-    console.log(competitors);
     return (
       <Card>
         <CardBody>
@@ -29,7 +23,7 @@ export default class RaceDetailedView extends Component {
             </tr>
             </thead>
             <tbody>
-            {competitors.map((competitor)=>(<CompetitorItem key={competitor.ID} competitor={competitor}/>))}
+            {competitors.map((competitor) => (<CompetitorItem key={competitor.ID} competitor={competitor}/>))}
             </tbody>
           </Table>
           <Button>Make a Bet</Button>

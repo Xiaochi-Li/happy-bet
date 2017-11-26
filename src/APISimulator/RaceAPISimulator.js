@@ -1,20 +1,20 @@
 import Meeting from './Meeting'
 import sortBy from 'sort-by'
 
-/* This is a API simulator that simulate an URL which returns 100 nearest race events that will happen soon regardless their meeting and type.
- * The simulator is build under the following assumptions:
- * 1. Ideally, costly operation, such as sorting, should be finished at back-end. The API protocols should return well prepared data to support business logic.
- * 2. The reason of returning 100 race event is the trade-off between storage and performance. Data of 100 events won't occupy too much local storage
- * but could allow less frequent ajax requesting at the client side.
- * 3. Meeting.js Race.js and Competitor.js simulate the one to many relationships in the back-end database
+/**
+ *
+ * @type {Array}
  */
-
 let racesList = [];
 export default class RaceAPISimulator {
+  /**
+   * construct a API simulator.
+   */
   constructor() {
-    this.meetings = this.getMeetings();
-    this.getMeetings.bind(this);
+    this.meetings = this.getMeetings(); // {array[meeting]} a collection of meetings.
+
   }
+
 
   getMeetings() {
     const meetings = [];
@@ -24,11 +24,14 @@ export default class RaceAPISimulator {
     return meetings;
   }
 
-  getNearRaces() {
+  getSortedRacesJSON() {
     this.sortRaces();
     return JSON.stringify(racesList);
   }
 
+  /**
+   *
+   */
   sortRaces() {
     this.meetings.forEach(
       (meeting) => {

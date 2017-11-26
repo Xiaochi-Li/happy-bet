@@ -10,6 +10,7 @@ export default class RaceItem extends React.Component {
     this.state = {collapse: false};
   }
 
+
   toggle() {
     this.setState({collapse: !this.state.collapse});
   }
@@ -19,7 +20,8 @@ export default class RaceItem extends React.Component {
     return (
       <ListGroupItem>
         <Row>
-          <Col xs={4}>{`${race.location}  R${race.ID}`}</Col>
+          <Col xs={3}>{`${race.location}  R${race.ID}`}</Col>
+          <Col xs={2}>{`${race.type}`}</Col>
           <Col xs={4}><Countdown endDate={race.closeTime}/> TO GO</Col>
           <Col xs={1}></Col>
           <Button color="primary" onClick={this.toggle} style={{marginBottom: '1rem'}}>Detail</Button>
