@@ -26,7 +26,7 @@ a collapsing card unfolds to show the detail.
  * In real life, the winning rate of changes dynamically, but this app uses static win rate.
  * In real life, the weight of the different type of competitors has a different range. But this app uses the same range.
  * If the first race event shows "00:00:00" when the web-app is firstly opened or refreshed, the removing race feature is somehow disabled. Need to refresh the page to solve this issue. 
- * In a rare occasion, the expired race won't be removed from the list.
+ * In very rare occasions, the expired race won't be removed from the list.
  
 ## Future Improvement
  #### New Features
