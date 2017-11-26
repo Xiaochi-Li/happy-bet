@@ -1,52 +1,35 @@
 import React, {Component} from 'react';
 import {
-  Card, CardText, CardBody,
-  CardTitle, CardSubtitle, Button, Table
+  Card, CardBody,
+  CardTitle, Button, Table
 } from 'reactstrap';
+import CompetitorItem from './CompetitorItem'
 
 
 export default class RaceDetailedView extends Component {
   constructor(props) {
     super(props);
-    this.state = {}
+    this.state = {
+    }
   }
 
   render() {
+    const {location, ID, competitors} = this.props.race;
+    console.log(competitors);
     return (
       <Card>
         <CardBody>
-          <CardTitle>Card title</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's
-            content.</CardText>
+          <CardTitle>{`${location}  R${ID}`}</CardTitle>
           <Table>
             <thead>
             <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
+              <th>Name</th>
+              <th>Weight</th>
+              <th>Win</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
+            {competitors.map((competitor)=>(<CompetitorItem key={competitor.ID} competitor={competitor}/>))}
             </tbody>
           </Table>
           <Button>Make a Bet</Button>

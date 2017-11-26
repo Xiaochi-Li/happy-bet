@@ -28,7 +28,7 @@ export default class Meeting {
     const races = [];
     const numOfRaces = chance.integer({min: 1, max: 12});
     for (let i = 1; i <= numOfRaces; i++) {
-      races.push(new Race(this.type));
+      races.push(new Race(i));
     }
     return races;
   }

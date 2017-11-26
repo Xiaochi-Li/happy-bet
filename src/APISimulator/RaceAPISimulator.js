@@ -34,11 +34,11 @@ export default class RaceAPISimulator {
       (meeting) => {
         const {location, races, type} = meeting;
         races.forEach((race) => {
-          const newRace = {type: type, location: location, closeTime:race.closeTime, race: race.competitors};
+          const newRace = {type: type, ID:race.ID, location: location, closeTime:race.closeTime, competitors: race.competitors};
           racesList.push(newRace);
         })
       }
-    )
+    );
     racesList.sort(sortBy('closeTime'));
   }
 }
