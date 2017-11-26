@@ -1,9 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
-The web app is deployed on Firebace [Happy Bet](https://github.com/facebookincubator/create-react-app).
-## Table of Contents
-
-## Functionality
+The web app is deployed on Firebace [Happy Bet](https://happy-bet.firebaseapp.com/).
 
 ## Assumption
 #### API 
