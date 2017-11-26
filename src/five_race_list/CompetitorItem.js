@@ -1,5 +1,8 @@
 import React from 'react'
 
+/**
+ * a react component shows information of competitors.
+ */
 export default class CompetitorItem extends React.Component {
   constructor(props) {
     super(props);

@@ -3,13 +3,15 @@ import {ListGroupItem, Collapse, Button, Col, Row} from 'reactstrap';
 import Countdown from 'react-countdown-moment'
 import RaceDetailedView from '../five_race_list/RaceDetailedView.js'
 
+/**
+ * a react component show general information of a race.
+ */
 export default class RaceItem extends React.Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
     this.state = {collapse: false};
   }
-
 
   toggle() {
     this.setState({collapse: !this.state.collapse});
@@ -30,7 +32,6 @@ export default class RaceItem extends React.Component {
         <Collapse isOpen={this.state.collapse}>
           <RaceDetailedView race={race}/>
         </Collapse>
-
       </ListGroupItem>
 
     );

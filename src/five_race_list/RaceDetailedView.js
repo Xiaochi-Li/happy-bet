@@ -2,6 +2,9 @@ import React, {Component} from 'react';
 import {Card, CardBody, CardTitle, Button, Table} from 'reactstrap';
 import CompetitorItem from './CompetitorItem'
 
+/**
+ * a class represent the collapse card which shows details fo a race.
+ */
 export default class RaceDetailedView extends Component {
   constructor(props) {
     super(props);
