@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The web app is deployed on Firebace [Happy Bet](https://happy-bet.firebaseapp.com/).
 
 ## Functionality
-This a web application allow users to watch near race events, it allow users to:
+This is a web application allow users to watch near race events, it allow users to:
 * keep tracking the remaining time of 5 nearest race in seconds.
 * View competitor details of one race while keep an eye on other race events in one page at the same time.
 * Finished race events are automatically removed from the list.
