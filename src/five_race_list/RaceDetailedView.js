@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, CardBody, CardTitle, Button, Table} from 'reactstrap';
+import {Card, CardBody, CardTitle, Button,CardSubtitle, Table} from 'reactstrap';
 import CompetitorItem from './CompetitorItem'
 
 /**
@@ -17,9 +17,11 @@ export default class RaceDetailedView extends Component {
       <Card>
         <CardBody>
           <CardTitle>{`${location}  R${ID}`}</CardTitle>
+          <CardSubtitle> Competitors </CardSubtitle>
           <Table>
             <thead>
             <tr>
+              <th>Position</th>
               <th>Name</th>
               <th>Weight</th>
               <th>Win</th>

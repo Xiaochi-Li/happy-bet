@@ -8,11 +8,11 @@ export default class Competitor {
    * Create a competitor.
    * @param {number} ID - The competitor ID.
    */
-  constructor(ID) {
+  constructor(positionNum) {
     this.name = this.getRandomName(); // {string} The name of a competitor.
     this.weight = this.getRandomWeight(); // {number} The weight of a competitor.
     this.win = this.getRandomWin(); // {number} The win rate of a competitor.
-    this.ID = ID; // {number} The ID of a competitor.
+    this.positionNum = positionNum; // {number} The ID of a competitor.
   }
 
   /**

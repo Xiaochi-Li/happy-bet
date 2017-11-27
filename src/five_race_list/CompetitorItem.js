@@ -10,9 +10,10 @@ export default class CompetitorItem extends React.Component {
   }
 
   render() {
-    const {name, weight, win} = this.props.competitor;
+    const {name, weight, win, positionNum} = this.props.competitor;
     return (
       <tr>
+        <td>{positionNum}</td>
         <td>{name}</td>
         <td>{weight}</td>
         <td>{win}</td>
