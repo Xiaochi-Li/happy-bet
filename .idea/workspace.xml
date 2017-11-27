@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba43a8bb-e016-4728-b58f-98c19bb36489" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/five_race_list/FiveRaceList.js" afterPath="$PROJECT_DIR$/src/five_race_list/FiveRaceList.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -101,8 +100,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="315">
-                <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="81" lean-forward="false" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -123,12 +122,12 @@
       <file leaf-file-name="FiveRaceList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/five_race_list/FiveRaceList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+            <state relative-caret-position="467">
+              <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <marker date="1511738408423" expanded="true" signature="2196:2208" ph="..." />
-                <marker date="1511738408423" expanded="true" signature="2196:2221" ph="..." />
+                <marker date="1511741855367" expanded="true" signature="2323:2335" ph="..." />
+                <marker date="1511741855367" expanded="true" signature="2323:2348" ph="..." />
               </folding>
             </state>
           </provider>
@@ -178,11 +177,11 @@
         <option value="$PROJECT_DIR$/src/APISimulator/Race.js" />
         <option value="$PROJECT_DIR$/src/APISimulator/Meeting.js" />
         <option value="$PROJECT_DIR$/src/APISimulator/RaceAPISimulator.js" />
-        <option value="$PROJECT_DIR$/src/five_race_list/FiveRaceList.js" />
         <option value="$PROJECT_DIR$/src/five_race_list/RaceDetailedView.js" />
         <option value="$PROJECT_DIR$/src/five_race_list/RaceItem.js" />
         <option value="$PROJECT_DIR$/src/five_race_list/CompetitorItem.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/five_race_list/FiveRaceList.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -199,6 +198,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="840" />
     <option name="y" value="23" />
     <option name="width" value="840" />
     <option name="height" value="969" />
@@ -290,15 +290,15 @@
       <updated>1511421367319</updated>
       <workItem from="1511421368975" duration="34717000" />
       <workItem from="1511651311004" duration="4837000" />
-      <workItem from="1511725671551" duration="10712000" />
+      <workItem from="1511725671551" duration="12242000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55210000" />
+    <option name="totallyTimeSpent" value="56740000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="840" height="969" extended-state="0" />
+    <frame x="840" y="23" width="840" height="969" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21245421" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -469,8 +469,8 @@
           <caret line="26" column="63" lean-forward="false" selection-start-line="26" selection-start-column="63" selection-end-line="26" selection-end-column="63" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <marker date="1511738408423" expanded="true" signature="2196:2208" ph="..." />
-            <marker date="1511738408423" expanded="true" signature="2196:2221" ph="..." />
+            <marker date="1511741855367" expanded="true" signature="2323:2335" ph="..." />
+            <marker date="1511741855367" expanded="true" signature="2323:2348" ph="..." />
           </folding>
         </state>
       </provider>
@@ -585,18 +585,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/five_race_list/FiveRaceList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1511738408423" expanded="true" signature="2196:2208" ph="..." />
-            <marker date="1511738408423" expanded="true" signature="2196:2221" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/five_race_list/RaceDetailedView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -617,14 +605,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/five_race_list/CompetitorItem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -633,11 +613,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/five_race_list/CompetitorItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="54" lean-forward="false" selection-start-line="3" selection-start-column="54" selection-end-line="3" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/five_race_list/FiveRaceList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="52" column="52" lean-forward="false" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <marker date="1511741855367" expanded="true" signature="2323:2335" ph="..." />
+            <marker date="1511741855367" expanded="true" signature="2323:2348" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="315">
-            <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="81" lean-forward="false" selection-start-line="2" selection-start-column="81" selection-end-line="2" selection-end-column="81" />
             <folding />
           </first_editor>
           <second_editor />

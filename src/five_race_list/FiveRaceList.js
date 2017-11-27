@@ -42,17 +42,19 @@ export default class FiveRaceList extends React.Component {
   /**
    * A call back function update this.count by 1.
    * If the counting clock reach the expire duration of the first race event,
-   * remove an event and it's expire duration from state.races and state.raceDurations
+   * remove an event and it's expire duration from state.races and state.raceDurations.
+   *
+   * It could successfully handle the rare occasion where more than one race events are finished at the same time.
    */
   onEverySecond = () => {
     let {count, raceDurations, races} = this.state;
-    count = count + 1;
+    count += 1;
     this.setState({count: count});
-    if (count === raceDurations[0]) {
+    while (count === raceDurations[0]){raceDurations
       raceDurations.shift();
       races.shift();
-      this.setState({raceDurations: raceDurations, races: races});
     }
+    this.setState({raceDurations: raceDurations, races: races});
   };
 
   render() {
